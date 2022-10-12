@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Elemento de control | Sistemas de control automáticos programados con ESP Steamakers + TDR-Steam + Arduniblocks </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-2"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Sistemas de control automáticos programados con ESP Steamakers + TDR-Steam + Arduniblocks</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Sistemas de control automáticos programados con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
+   <li id="active"><a href="elemento_de_control.html" class="active no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li><a href="reto_demo_01_temperatura_y_humedad_con_dht11_serial_plotter.html" class="no-ch">Reto Demo 01 Temperatura y humedad con DHT11. Serial Plotter</a></li>
+   <li><a href="reto_demo_02_multitarea.html" class="no-ch">Reto Demo 02 Multitarea</a></li>
+   <li><a href="reto_demo_03_servidor_web.html" class="no-ch">Reto Demo 03 Servidor web</a></li>
+   <li><a href="reto_demo_04_iot_thingspeak.html" class="no-ch">Reto Demo 04 IOT Thingspeak</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="elementos_y_tipos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="arduinoblocks.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Elemento de control</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id6">
+<div class="iDevice emphasis0" >
+<div id="ta6_112_2" class="block iDevice_content">
+<div class="exe-text"><p>En nuestro caso como elemento de control vamos a utilizar una placa de control programable ESP32 Steamakers por varios motivos:<img src="steamaker.png" alt="steammakers" title="steammakers" width="500" height="361" style="float: right;" /></p>
+<ul>
+<li>Basada en ESP32 lo que significa, capacidad de proceso, conectividad wifi y bluetooth, etc.</li>
+<li>Factor de forma Arduino y compatibilidad con shields de Arduino.</li>
+<li>Fácil conexionado. Pinout macho disponible para los puertos de la placa, luego el conexionado se puede hacer sin protoboard.</li>
+<li>Medidor de energía incorporado.</li>
+<li>Tarjeta microSD incorporada.</li>
+<li>Arduinoblocks es totalmente compatible con la misma, pensado para todas sus funcionalidades.</li>
+<li>Detallada documentación técnica.</li>
+<li>Prolija documentación didáctica.</li>
+<li>Calidad de construcción y soporte de fabricante.</li>
+<li>Diseñada en España por docentes para la enseñanza.</li>
+<li>Varios distribuidores en España.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">ESP32 Steamakers. Características</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_113_2" class="block iDevice_content">
+<div class="exe-text"><p>Las características más importantes de esta placa son:<img src="steamakers_a.png" alt="steamakers" title="steamakers" width="600" height="496" style="float: right;" /></p>
+<ul>
+<li>Microcontrolador Tensilica Xtensa 32-bit LX6 a 160MHz.</li>
+<li>Conectividad Wifi 802.11 b/g/n/e/i.</li>
+<li>Conectividad Bluetooth 4.2 y modo BLE.</li>
+<li>Zócalo para tarjetas µSD.</li>
+<li>14 entradas y salidas digitales con alimentación.</li>
+<li>Conector serie hembra con alimentación.</li>
+<li>Conector I2C para conectar hasta 5 dispositivos a la vez sobre la misma placa.</li>
+<li>Conector hembra I2C para conexión de una pantalla OLED.</li>
+<li>Conector de Reset.</li>
+<li>Conector de 5V.</li>
+<li>Conector de 3.3V.</li>
+<li>Interruptor 3.3-5V seleccionable para cambiar entre estas dos tensiones en algunos pines de alimentación.</li>
+<li>Entradas y salidas analógicas.</li>
+<li>Sensor Hall y de temperatura integrado.</li>
+<li>2 convertidores Digital-Analógico (DAC) de 8 bits.</li>
+<li>16 convertidores Analógico-Digital (ADC) de 12 bits.</li>
+<li>16 canales PWM.</li>
+<li>2 UART.</li>
+<li>2 canales I2C.</li>
+<li>4 canales SPI.</li>
+<li>448Kb ROM.</li>
+<li>520 KB SRAM.<img src="steamakers_b.png" alt="steammakers b" title="steammakers b" width="500" height="342" style="float: right;" /></li>
+<li>8KB+8KB SRAM en RTC.</li>
+<li>1kbit eFUSE.</li>
+<li>512 bytes Memoria Flash (EEPROM).</li>
+<li>10 sensores táctiles.</li>
+<li>4 temporizadores internos de 64 bits.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">TDR-Steam</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_113_2" class="block iDevice_content">
+<div class="exe-text"><p>La placa TDR-Steam es un Shield diseñado por ROBOLOT Team, que se conecta a los pines de un Arduino Uno. Esta placa trae integrados una serie de sensores y actuadores que permiten aprender a programar un sistema de control Arduino, con un conexionado ya establecido y por tanto sencillo.</p>
+<p>ES importante conocer los elementos de TDR-STeam, así como los pines a los que están conectados (pinout) para poder configurar posteriormente nuestros programas. <img src="tdr-steam.png" alt="tdr-steam" width="500" height="382" style="float: right;" /></p>
+<table style="width: 36.8555%; height: 271px;" border="1">
+<tbody>
+<tr style="height: 43px;">
+<td style="width: 2.60417%; height: 43px;"></td>
+<td style="width: 27.7295%; text-align: center; height: 43px;"><strong>Sensor/Actuador/Módulo</strong></td>
+<td style="width: 21.931%; height: 43px; text-align: center;"><strong>Pin de conexión</strong></td>
+</tr>
+<tr style="height: 43px;">
+<td style="width: 2.60417%; height: 43px;">1</td>
+<td style="width: 27.7295%; height: 43px;">Dos pulsadores (SW1,SW2)</td>
+<td style="width: 21.931%; height: 43px; text-align: center;">D2, D7</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 2.60417%; height: 10px;">2</td>
+<td style="width: 27.7295%; height: 10px;">Dos leds (Azul y Rojo)</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">D13, D12</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 2.60417%; height: 10px;">3</td>
+<td style="width: 27.7295%; height: 10px;">led RGB</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">D6-D9-D10</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 2.60417%; height: 10px;">4</td>
+<td style="width: 27.7295%; height: 10px;">Módulo DHT11 Sensor de temperatura y humedad</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">D4</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 2.60417%; height: 10px;">5</td>
+<td style="width: 27.7295%; height: 10px;">Zumbador o Piezo eléctrico</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">D8</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 2.60417%; height: 10px;">6</td>
+<td style="width: 27.7295%; height: 10px;">Dos puertos (Entradas/Salidas) digitales</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">D3 y D5</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 2.60417%; height: 10px;">7</td>
+<td style="width: 27.7295%; height: 10px;">Módulo receptor de infrarrojos (IR)</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">D11</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 2.60417%; height: 10px;">8</td>
+<td style="width: 27.7295%; height: 10px;">Módulo potenciómetro giratorio</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">A0</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 2.60417%; height: 10px;">9</td>
+<td style="width: 27.7295%; height: 10px;">Sensor de luminosidad (LDR)</td>
+<td style="width: 21.931%; height: 10px; text-align: center;">A1</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 2.60417%; height: 21px;">10</td>
+<td style="width: 27.7295%; height: 21px;">Sensor de temperatura (LM 35)</td>
+<td style="width: 21.931%; height: 21px; text-align: center;">A2</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 2.60417%; height: 21px;">11</td>
+<td style="width: 27.7295%; height: 21px;">Interface I2C compatible con sensores y módulos Keyestudio</td>
+<td style="width: 21.931%; height: 21px; text-align: center;">
+<p>SDA-A4</p>
+<p>SCL-A5</p>
+</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 2.60417%; height: 21px;">12</td>
+<td style="width: 27.7295%; height: 21px;">Puerto entrada analógico</td>
+<td style="width: 21.931%; height: 21px; text-align: center;">A3</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 2.60417%; height: 21px;">13</td>
+<td style="width: 27.7295%; height: 21px;">Conexión de comunicaciones Bluetooth y Wifi (Switch On/Off)</td>
+<td style="width: 21.931%; height: 21px; text-align: center;">Rx-Tx</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 2.60417%; height: 21px;">14</td>
+<td style="width: 27.7295%; height: 21px;">Botón de reinicio</td>
+<td style="width: 21.931%; text-align: center; height: 21px;">-</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="elementos_y_tipos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="arduinoblocks.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

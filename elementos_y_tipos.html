@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Elementos y tipos | Sistemas de control automáticos programados con ESP Steamakers + TDR-Steam + Arduniblocks </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Sistemas de control automáticos programados con ESP Steamakers + TDR-Steam + Arduniblocks</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Sistemas de control automáticos programados con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li id="active"><a href="elementos_y_tipos.html" class="active no-ch">Elementos y tipos</a></li>
+   <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li><a href="reto_demo_01_temperatura_y_humedad_con_dht11_serial_plotter.html" class="no-ch">Reto Demo 01 Temperatura y humedad con DHT11. Serial Plotter</a></li>
+   <li><a href="reto_demo_02_multitarea.html" class="no-ch">Reto Demo 02 Multitarea</a></li>
+   <li><a href="reto_demo_03_servidor_web.html" class="no-ch">Reto Demo 03 Servidor web</a></li>
+   <li><a href="reto_demo_04_iot_thingspeak.html" class="no-ch">Reto Demo 04 IOT Thingspeak</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="elemento_de_control.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Elementos y tipos</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id17">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Elementos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta17_115_2" class="block iDevice_content">
+<div class="exe-text"><p>Nuestro sistema de control va a contener básicamente tres bloques de dispositivos:<img src="elementos_sistema_control.png" alt="elementos sistemas control" width="444" height="133" style="float: right; margin-right: 2px; margin-left: 2px;" /></p>
+<ul>
+<li><span style="text-decoration: underline;">Elementos de proceso o control</span>: son los que se van a programar, recibirán datos de los elementos de entrada para decidir que realizar con los elementos de salida. En nuestro caso es Arduino.</li>
+<li><span style="text-decoration: underline;">Elementos de entrada</span>: serán sensores que se le pueden conectar a nuestro sistema de control, pueden ser: pulsadores, interruptores, finales de carrera, ntc, ldr, etc.</li>
+<li><span style="text-decoration: underline;">Elementos de salida</span>: van a ser los actuadores, los que va a decidir nuestro programa poner en funcionamiento y de que manera o parar, como: diodos leds, zumbadores, motores, etc.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id18">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Tipos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta18_116_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Lazo Abierto</strong></p>
+<p>No hay una realimentación, lo que significa el controlador da una orden de puesta en marcha a los actuadores sin que se vigile en ningún momento la señal de los sensores (elementos de entrada).</p>
+<p><img src="lazo_abierto_01.png" alt="esquema lazo abierto" width="408" height="164" style="float: left; margin-right: 2px; margin-left: 2px;" /><img src="lazo_abierto_02.png" alt="conexionado lazo abierto" width="302" height="400" style="margin-right: 2px; margin-left: 2px;" /></p>
+<p><strong>Lazo Cerrado</strong></p>
+<p>hay realimentación, lo que quiere decir que el sistema de control siempre está vigilando los sensores (elementos de entrada) para realizar una acción u otra en función del estado de los mismos.</p>
+<p><img src="lazo_cerrado_01.png" alt="esquema lazo cerrado" width="440" height="260" style="float: left; margin-right: 2px; margin-left: 2px;" /><img src="lazo_cerrado_02.png" alt="conexionado lazo cerrado" width="370" height="274" style="margin-right: 2px; margin-left: 2px;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="elemento_de_control.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
