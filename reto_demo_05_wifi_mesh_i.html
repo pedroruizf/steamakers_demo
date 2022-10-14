@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Reto Demo 05 Wifi Mesh I | Sistemas de control automáticos programados con ESP Steamakers + TDR-Steam + Arduniblocks </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-53"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Sistemas de control automáticos programados con ESP Steamakers + TDR-Steam + Arduniblocks</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Sistemas de control automáticos programados con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
+   <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li><a href="reto_demo_01_temperatura_y_humedad_con_dht11_serial_plotter.html" class="no-ch">Reto Demo 01 Temperatura y humedad con DHT11. Serial Plotter</a></li>
+   <li><a href="reto_demo_02_multitarea.html" class="no-ch">Reto Demo 02 Multitarea</a></li>
+   <li><a href="reto_demo_03_servidor_web.html" class="no-ch">Reto Demo 03 Servidor web</a></li>
+   <li><a href="reto_demo_04_iot_thingspeak.html" class="no-ch">Reto Demo 04 IOT Thingspeak</a></li>
+   <li id="active"><a href="reto_demo_05_wifi_mesh_i.html" class="active no-ch">Reto Demo 05 Wifi Mesh I</a></li>
+   <li><a href="reto_demo_06_wifi_mesh_ii.html" class="no-ch">Reto Demo 06 Wifi Mesh II</a></li>
+   <li><a href="para_saber_ms.html" class="no-ch">Para saber más</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="reto_demo_04_iot_thingspeak.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_demo_06_wifi_mesh_ii.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Reto Demo 05 Wifi Mesh I</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id99">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Wifi-Mesh</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta99_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Wifi-Mesh es una malla de dispositivos descentralizados, conectados mediante wifi de tal manera que, todos los dispositivos pueden ser tanto emisores como receptores de mensajes.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id100">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta100_129_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">15</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>El reto consiste en que un emisor en función de las combinaciones de pulsación de los pulsadores, emite un dato diferente en un mensaje que manda al receptor.</p>
+<p>En concreto:</p>
+<ul>
+<li>Pulsado SW1 + No pulsado SW2: Color verde</li>
+<li>No pulsado SW1 + Pulsado SW2: Color rojo</li>
+<li>Pulsado SW1 + Pulsado SW2: Color azul</li>
+</ul>
+<p>En el led RGB del receptor se debe colorear con el dato de color recibido en el mensaje.</p>
+<p> </p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p>Código de proyecto compartido por profesor (emisor): <span style="background-color: #f9f9f9; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;">KNCoA*O_</span></p>
+<p><span style="font-size: 12pt;"><span style="color: #333333; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;">Código emisor:</span></span></span></p>
+<p><span style="font-size: 12pt;"><span style="color: #333333; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;"><img src="reto05_demo_steamakers.png" alt="reto5" title="reto5" width="668" height="734" /><br /></span></span></span></p>
+<p><span style="font-size: 12pt;"><span style="color: #333333; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;">Código de proyecto compartido por profesor (receptor): Wt4ObGJr</span></span></span></p>
+<p><span style="font-size: 12pt;"><span style="color: #333333; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;">Código:</span></span></span></p>
+<p><span style="font-size: 12pt;"><span style="color: #333333; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;"><img src="reto05b_demo_steamakers.png" alt="reto05b" title="reto05b" width="924" height="444" /></span></span></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id101">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ficheros adjuntos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta101_82" class="block iDevice_content">
+
+</div>
+<ul class='exeFileList'><li><a href='reto05_demo_steamakers.abp' target='_blank'>reto05_demo_steamakers.abp<span> (Ventana nueva)</span></a></li>
+<li><a href='reto05b_demo_steamakers.abp' target='_blank'>reto05b_demo_steamakers.abp<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="reto_demo_04_iot_thingspeak.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_demo_06_wifi_mesh_ii.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
