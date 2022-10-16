@@ -50,8 +50,8 @@
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta92_176_2" class="block iDevice_content">
-<div class="exe-text"><p>La multitarea consiste en realizar varias tareas a la vez, cada ejecución de una tarea se llama hilo de trabajo. En microcontroladores más potentes como el ESP32 es posible porque pueden soportar más de un hilo de trabajo (en concreto 2), pero por ejemplo en arduino no es posible de forma real, ya que sólo soporta un hilo de trabajo.</p>
-<p>Para conseguir esta multitarea en Arduino lo que hacemos (a través de una librería) es repartir el tiempo de proceso del microcontrolador en varias tareas, mientra se ejecuta una se paraliza la otra a muy breves espacios de tiempo. De esta manera se da la sensación de multitarea. No debemos olvidar que el microcontrolador de Arduino es muy modesto y no funcionará correctamente con muchas tareas.</p>
+<div class="exe-text"><p>La multitarea consiste en realizar varias tareas a la vez, esto es posible en Arduino y en ESP32 gracias a un planificador (scheduler) que se encarga de repartir el tiempo de procesamiento entre las distintas tareas. Al no tener estos dispositivos un SSOO que se encargue de esta tarea lo hace una librería. En microcontroladores más potentes como el ESP32 (con dos nucleos) este planificador se encarga de repartir las tareas entre los núcleos.</p>
+<p>Para conseguir esta multitarea lo que hace el planificador es repartir el tiempo de proceso del microcontrolador en varias tareas, mientra se ejecuta una se paraliza la otra a muy breves espacios de tiempo. De esta manera se da la sensación de multitarea. No debemos olvidar que el microcontrolador de Arduino es muy modesto y no funcionará correctamente con muchas tareas.</p>
 <p>Esta funcionalidad como todo el entorno de Arduinoblocks se lo debemos a <strong><em>Juanjo López</em></strong>.</p>
 <p>En el entorno de Arduinoblocks encontramos esta funcionalidad en las herramientas <em>Tiempo &gt; Multi-Tarea</em>.</p>
 <p><img src="arduinoblocks_multitarea.png" alt="multitarea" width="649" height="574" /></p></div>

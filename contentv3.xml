@@ -218,7 +218,7 @@
                   <string role="key" value="_storageName"></string>
                   <string value="tdr-steam.png"></string>
                   <string role="key" value="_userName"></string>
-                  <string value="/tmp/tmpq2diUZ/tdr-steam.png"></string>
+                  <string value="/tmp/tmp1SJndx/tdr-steam.png"></string>
                   <string role="key" value="checksum"></string>
                   <string value="968250d4f1c532bb780d56c57e036f89"></string>
                   <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -270,7 +270,7 @@
                   <string role="key" value="_storageName"></string>
                   <string value="steamaker.png"></string>
                   <string role="key" value="_userName"></string>
-                  <string value="/tmp/tmpq2diUZ/steamaker.png"></string>
+                  <string value="/tmp/tmp1SJndx/steamaker.png"></string>
                   <string role="key" value="checksum"></string>
                   <string value="a7fb717a750e45f3601d297fc24f79e3"></string>
                   <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -481,7 +481,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="elementos_sistema_control.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/elementos_sistema_control.png"></string>
+                     <string value="/tmp/tmp1SJndx/elementos_sistema_control.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="a35193d491712bd5390ee35431dfd0fb"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -666,7 +666,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="lazo_cerrado_01.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/lazo_cerrado_01.png"></string>
+                     <string value="/tmp/tmp1SJndx/lazo_cerrado_01.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="ac5031fc4f5779c081b2395297d264da"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -718,7 +718,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="lazo_abierto_02.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/lazo_abierto_02.png"></string>
+                     <string value="/tmp/tmp1SJndx/lazo_abierto_02.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="f02c167d5ea40c178226030d3197d55c"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -770,7 +770,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="lazo_cerrado_02.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/lazo_cerrado_02.png"></string>
+                     <string value="/tmp/tmp1SJndx/lazo_cerrado_02.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="76fabd097e59881de6706bcbf889a1da"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -822,7 +822,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="lazo_abierto_01.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/lazo_abierto_01.png"></string>
+                     <string value="/tmp/tmp1SJndx/lazo_abierto_01.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="452d1218aed67855c8c4298df86c2bff"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -992,8 +992,8 @@
 &lt;li&gt;Basada en ESP32 lo que significa, capacidad de proceso, conectividad wifi y bluetooth, etc.&lt;/li&gt;
 &lt;li&gt;Factor de forma Arduino y compatibilidad con shields de Arduino.&lt;/li&gt;
 &lt;li&gt;Fácil conexionado. Pinout macho disponible para los puertos de la placa, luego el conexionado se puede hacer sin protoboard.&lt;/li&gt;
-&lt;li&gt;Medidor de energía incorporado.&lt;/li&gt;
-&lt;li&gt;Tarjeta microSD incorporada.&lt;/li&gt;
+&lt;li&gt;Sensores integrados: energía, temperatura y campo magnético.&lt;/li&gt;
+&lt;li&gt;Lector de tarjeta microSD incorporada.&lt;/li&gt;
 &lt;li&gt;Arduinoblocks es totalmente compatible con la misma, pensado para todas sus funcionalidades.&lt;/li&gt;
 &lt;li&gt;Detallada documentación técnica.&lt;/li&gt;
 &lt;li&gt;Prolija documentación didáctica.&lt;/li&gt;
@@ -1046,7 +1046,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="steamaker.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/steamaker.png"></string>
+                     <string value="/tmp/tmp1SJndx/steamaker.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="a7fb717a750e45f3601d297fc24f79e3"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1255,7 +1255,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="steamakers_b.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/steamakers_b.png"></string>
+                     <string value="/tmp/tmp1SJndx/steamakers_b.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="0d7efd967ede2e3d8bfa824915079cf5"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1307,7 +1307,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="steamakers_a.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/steamakers_a.png"></string>
+                     <string value="/tmp/tmp1SJndx/steamakers_a.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="afe25f371e7fe27fee65a5f41f75fbb7"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1572,7 +1572,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="tdr-steam.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/tdr-steam.png"></string>
+                     <string value="/tmp/tmp1SJndx/tdr-steam.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="968250d4f1c532bb780d56c57e036f89"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1780,7 +1780,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="arduinoblocks_entorno.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/arduinoblocks_entorno.png"></string>
+                     <string value="/tmp/tmp1SJndx/arduinoblocks_entorno.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="1d59fcd9a6973c48ad08da823d53a51c"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1995,7 +1995,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="dht11.jpg"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/dht11.jpg"></string>
+                     <string value="/tmp/tmp1SJndx/dht11.jpg"></string>
                      <string role="key" value="checksum"></string>
                      <string value="1aa8200d2a97e684362a6253929fc503"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2047,7 +2047,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="dht11_board.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/dht11_board.png"></string>
+                     <string value="/tmp/tmp1SJndx/dht11_board.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="64e85d5c4bd79b2b501e763f22cd007a"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2237,7 +2237,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto01_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto01_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto01_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="dc8031b6c9c5e822c443d06ba03ab66a"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2361,7 +2361,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto01_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto01_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto01_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="ce1cc519b7cb37cabb63c693e8549c8c"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2574,8 +2574,8 @@
               <string role="key" value="anchors_linked_from_fields"></string>
               <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
-              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;La multitarea consiste en realizar varias tareas a la vez, cada ejecución de una tarea se llama hilo de trabajo. En microcontroladores más potentes como el ESP32 es posible porque pueden soportar más de un hilo de trabajo (en concreto 2), pero por ejemplo en arduino no es posible de forma real, ya que sólo soporta un hilo de trabajo.&lt;/p&gt;
-&lt;p&gt;Para conseguir esta multitarea en Arduino lo que hacemos (a través de una librería) es repartir el tiempo de proceso del microcontrolador en varias tareas, mientra se ejecuta una se paraliza la otra a muy breves espacios de tiempo. De esta manera se da la sensación de multitarea. No debemos olvidar que el microcontrolador de Arduino es muy modesto y no funcionará correctamente con muchas tareas.&lt;/p&gt;
+              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;La multitarea consiste en realizar varias tareas a la vez, esto es posible en Arduino y en ESP32 gracias a un planificador (scheduler) que se encarga de repartir el tiempo de procesamiento entre las distintas tareas. Al no tener estos dispositivos un SSOO que se encargue de esta tarea lo hace una librería. En microcontroladores más potentes como el ESP32 (con dos nucleos) este planificador se encarga de repartir las tareas entre los núcleos.&lt;/p&gt;
+&lt;p&gt;Para conseguir esta multitarea lo que hace el planificador es repartir el tiempo de proceso del microcontrolador en varias tareas, mientra se ejecuta una se paraliza la otra a muy breves espacios de tiempo. De esta manera se da la sensación de multitarea. No debemos olvidar que el microcontrolador de Arduino es muy modesto y no funcionará correctamente con muchas tareas.&lt;/p&gt;
 &lt;p&gt;Esta funcionalidad como todo el entorno de Arduinoblocks se lo debemos a &lt;strong&gt;&lt;em&gt;Juanjo López&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;En el entorno de Arduinoblocks encontramos esta funcionalidad en las herramientas &lt;em&gt;Tiempo &amp;gt; Multi-Tarea&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/arduinoblocks_multitarea.png&quot; alt=&quot;multitarea&quot; width=&quot;649&quot; height=&quot;574&quot; /&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
@@ -2623,7 +2623,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="arduinoblocks_multitarea.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/arduinoblocks_multitarea.png"></string>
+                     <string value="/tmp/tmp1SJndx/arduinoblocks_multitarea.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="50e8147fdb5a472c96ea2880bc5d3cd6"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2809,7 +2809,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto02_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto02_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto02_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="c8cf3f26fa1c2174ecc27c44b16d604b"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2933,7 +2933,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto02_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto02_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto02_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="a025189cba19d28cc78caa3fa0f151d7"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3192,7 +3192,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="html.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/html.png"></string>
+                     <string value="/tmp/tmp1SJndx/html.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="347359114243d69bee6f50ef07ffebe2"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3244,7 +3244,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="servidor_web.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/servidor_web.png"></string>
+                     <string value="/tmp/tmp1SJndx/servidor_web.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="c2a7ba565431fc4af1ef4028375063ff"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3438,7 +3438,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto03_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto03_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto03_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="393a24bb781645fead46463983b6216b"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3562,7 +3562,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto03_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto03_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto03_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="ea9060f1d9fcb515b1bb8cfca01858f1"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3775,7 +3775,7 @@
               <string role="key" value="anchors_linked_from_fields"></string>
               <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
-              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://thingspeak.com/&quot;&gt;ThingSpeak&lt;/a&gt; es un servicio de Internet de las Cosas (IOT). Ofrece canales gratuitos y de pago para realizar servicios IOT.&lt;/p&gt;
+              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://thingspeak.com/&quot;&gt;ThingSpeak&lt;/a&gt; es un servicio de Internet de las Cosas (IOT). Ofrece canales gratuitos y de pago para realizar servicios IOT. En las cuentas que creas en ThingSpeak hay que crear dispositivos, que a su vez se asocian a canales en los cuales puedo enviar información desde los dispositivos asociados.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/thingspeak.png&quot; alt=&quot;thingspeak&quot; title=&quot;thingspeak&quot; width=&quot;200&quot; height=&quot;34&quot; /&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
               <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
               <int value="4"></int>
@@ -3821,7 +3821,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="thingspeak.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/thingspeak.png"></string>
+                     <string value="/tmp/tmp1SJndx/thingspeak.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="9c696024889e4df11dd7520e37b84a9a"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4011,7 +4011,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto04_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto04_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto04_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="3dfa2867a443b77aac4b13f8ee1caf98"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4135,7 +4135,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto04_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto04_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto04_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="c37d2b1feaaf24689b9853cf36464ed2"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4394,7 +4394,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="esp12.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/esp12.png"></string>
+                     <string value="/tmp/tmp1SJndx/esp12.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="a9a6d23d51eea14751b51a6811fb9339"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4446,7 +4446,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="wifi.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/wifi.png"></string>
+                     <string value="/tmp/tmp1SJndx/wifi.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="1a50ee2a6b40e365518c7c7244aa20bc"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4640,7 +4640,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto05_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto05_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto05_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="9a6a1eff4cc3a2a4e6cea70041ba7ef4"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4692,7 +4692,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto05b_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto05b_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto05b_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="f868e4f359e0bbddeb4cc399e9fcc3cf"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4817,7 +4817,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto05_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto05_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto05_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="1511300397e18c0d2e0c6ecff606d497"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4875,7 +4875,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto05b_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto05b_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto05b_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="796bd7bc0b8b9dc11f4ae36539f5cf95"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5140,7 +5140,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto06_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto06_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto06_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="62268c95674f818563ad125a7c7a5c8f"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5192,7 +5192,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="reto06b_demo_steamakers.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/reto06b_demo_steamakers.png"></string>
+                     <string value="/tmp/tmp1SJndx/reto06b_demo_steamakers.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="879295ea1b39384ddf3576dcec3ca549"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5317,7 +5317,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto06_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto06_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto06_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="34386749a3c07dc643ee368c8b7bfb7e"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5375,7 +5375,7 @@
                 <string role="key" value="_storageName"></string>
                 <string value="reto06b_demo_steamakers.abp"></string>
                 <string role="key" value="_userName"></string>
-                <string value="/tmp/tmpq2diUZ/reto06b_demo_steamakers.abp"></string>
+                <string value="/tmp/tmp1SJndx/reto06b_demo_steamakers.abp"></string>
                 <string role="key" value="checksum"></string>
                 <string value="b8b0b9a0fe435b30d1205cba6af981b9"></string>
                 <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5637,7 +5637,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="libro.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpq2diUZ/libro.png"></string>
+                     <string value="/tmp/tmp1SJndx/libro.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="64159c1390f62f69bfd1fd798e710582"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5911,7 +5911,7 @@
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="4"></reference>
+  <reference key="19"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
