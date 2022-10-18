@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Reto Demo 01 Temperatura y humedad con DHT11. Serial Plotter | Control programado con ESP32 Steamakers + TDR-Steam + Arduniblocks </title>
+<title>Reto Demo 01 Datalogger. Serial Plotter | Control programado con ESP32 Steamakers + TDR-Steam + Arduniblocks </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Pedro Ruiz Fernández" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -26,7 +26,7 @@
    <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
    <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
    <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
-   <li id="active"><a href="reto_demo_01_temperatura_y_humedad_con_dht11_serial_plotter.html" class="active no-ch">Reto Demo 01 Temperatura y humedad con DHT11. Serial Plotter</a></li>
+   <li id="active"><a href="reto_demo_01_datalogger_serial_plotter.html" class="active no-ch">Reto Demo 01 Datalogger. Serial Plotter</a></li>
    <li><a href="reto_demo_02_multitarea.html" class="no-ch">Reto Demo 02 Multitarea</a></li>
    <li><a href="reto_demo_03_servidor_web.html" class="no-ch">Reto Demo 03 Servidor web</a></li>
    <li><a href="reto_demo_04_iot_thingspeak.html" class="no-ch">Reto Demo 04 IOT Thingspeak</a></li>
@@ -43,7 +43,7 @@
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Reto Demo 01 Temperatura y humedad con DHT11. Serial Plotter</h1></header>
+<header id="nodeDecoration"><h1 id="nodeTitle">Reto Demo 01 Datalogger. Serial Plotter</h1></header>
 <article class="iDevice_wrapper textIdevice em_iDevice" id="id56">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">DHT11</h1></header>
@@ -66,7 +66,7 @@
 </article>
 <article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id57">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 1</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta57_169_2" class="block iDevice_content">
@@ -94,6 +94,54 @@
 
 </div>
 <ul class='exeFileList'><li><a href='reto01_demo_steamakers.abp' target='_blank'>reto01_demo_steamakers.abp<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id102">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Sensores integrados en ESP32 Steamakers</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta102_137_2" class="block iDevice_content">
+<div class="exe-text"><p>La placa ESP32 Steammakers tiene integrados sensores de: temperatura, campo magnético y medidores de energía eléctrica (voltaje, intensidad, potencia y consumo eléctrico).</p>
+<p><img src="sensores_integrados.png" alt="sensores integrados" title="sensores integrados" width="588" height="439" /></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id103">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 2</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta103_138_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">15</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>Se trata de adquirir de los sensores integrados de la Steamakers los valores de potencia (w) y energía (w.h) y mostrarlos en la pantalla LCD 16x2. Además, a través de comunicación serie (Serial plotter), se representarán las gráficas de los valores de potencia y energía consumida. Para observar cambios en potencia y energía, encendemos y apagamos con pulsadores los dos diodos leds y el led RGB a la vez.</p>
+<p>Objetivos:</p>
+<ul>
+<li>Repaso de pantalla LCD.</li>
+<li>Repaso de funciones.</li>
+<li>Conocer y usar sensores integrados.</li>
+<li>Conocer y usar Serial plotter.</li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p style="font-family: 'Encode Sans', ​Arial, Helvetica, sans-serif; font-size: 16.8px;">Código de proyecto compartido por profesor: <span style="background-color: #f9f9f9; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12pt;">PLxHdjYA</span></p>
+<p style="font-family: 'Encode Sans', ​Arial, Helvetica, sans-serif; font-size: 16.8px;">Código:</p>
+<p style="font-family: 'Encode Sans', ​Arial, Helvetica, sans-serif; font-size: 16.8px;"><img src="reto01b_demo_steamakers.png" alt="reto01 b" title="reto01 b" width="929" height="593" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id104">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_assignment.png)"><h1 class="iDeviceTitle">Ficheros adjuntos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta104_82" class="block iDevice_content">
+
+</div>
+<ul class='exeFileList'><li><a href='reto01b_demo_steamakers.abp' target='_blank'>reto01b_demo_steamakers.abp<span> (Ventana nueva)</span></a></li>
 </ul></div>
 </div>
 </div>
