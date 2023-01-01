@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Reto 04 IOT Thingspeak | Control programado con ESP32 Steamakers + TDR-Steam + Arduniblocks </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-51"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Control programado con ESP32 Steamakers + TDR-Steam + Arduniblocks</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control programado con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
+   <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li><a href="reto_01_datalogger_serial_plotter.html" class="no-ch">Reto 01 Datalogger. Serial Plotter</a></li>
+   <li><a href="reto_02_multitarea.html" class="no-ch">Reto 02 Multitarea</a></li>
+   <li><a href="reto_03_servidor_web.html" class="no-ch">Reto 03 Servidor web</a></li>
+   <li id="active"><a href="reto_04_iot_thingspeak.html" class="active no-ch">Reto 04 IOT Thingspeak</a></li>
+   <li><a href="reto_05_wifi_mesh_i.html" class="no-ch">Reto 05 Wifi Mesh I</a></li>
+   <li><a href="reto_06_wifi_mesh_ii.html" class="no-ch">Reto 06 Wifi Mesh II</a></li>
+   <li><a href="reto_07_telegram_i.html" class="no-ch">Reto 07 Telegram I</a></li>
+   <li><a href="reto_08_telegram_ii.html" class="no-ch">Reto 08 Telegram II</a></li>
+   <li><a href="para_saber_ms.html" class="no-ch">Para saber más</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="reto_03_servidor_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_05_wifi_mesh_i.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Reto 04 IOT Thingspeak</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id95">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">ThingSpeak</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta95_127_2" class="block iDevice_content">
+<div class="exe-text"><p><a href="https://thingspeak.com/">ThingSpeak</a> es un servicio de Internet de las Cosas (IOT). Ofrece canales gratuitos y de pago para realizar servicios IoT. En las cuentas que creas en ThingSpeak hay que crear dispositivos, que a su vez se asocian a canales en los cuales puedo enviar información desde los dispositivos asociados. Todo este proceso de creación de dispositivos y canales asociados se va a describir en un vídeo en la retroalimentación del reto.</p>
+<p><img src="thingspeak.png" alt="thingspeak" title="thingspeak" width="200" height="34" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id96">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta96_128_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">15:00</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>El reto consiste en publicar en un canal gratuito de ThingSpeak, dos campos (temperatura y humedad) cada 16 segundos.</p>
+<p>Objetivos:</p>
+<ul>
+<li>Conocer concepto de IOT.</li>
+<li>Usar acciones MQTT.</li>
+<li>Usar servicio IOT ThingSpeak.</li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p>Vídeo:</p>
+<p><iframe width="853" height="480" src="https://www.youtube.com/embed/B-vOey_KC-Q" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Se puede consultar el canal en la web: <a href="https://thingspeak.com/channels/1888902">https://thingspeak.com/channels/1888902</a></p>
+<p>Se puede instalar en móvil aplicación <strong>Thingview</strong> y añadir el canal: 1888902</p>
+<p>URL de proyecto público: <a href="http://www.arduinoblocks.com/web/project/939849">http://www.arduinoblocks.com/web/project/939849</a></p>
+<p>Código:</p>
+<p><img src="reto04_demo_steamakers.png" alt="reto4" title="reto4" width="999" height="554" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="reto_03_servidor_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_05_wifi_mesh_i.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
