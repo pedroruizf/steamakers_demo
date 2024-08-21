@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Reto datos + telecomandado | ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT)  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-71"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT) </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control programado con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
+   <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li><a href="datalogger_serial_plotter.html" class="daddy">Datalogger. Serial Plotter</a>
+   <ul class="other-section">
+      <li><a href="datalogger_humedad__temperatura.html" class="no-ch">Datalogger humedad / temperatura</a></li>
+      <li><a href="datalogger_intensidad__voltaje__energa.html" class="no-ch">Datalogger intensidad / voltaje / energía</a></li>
+   </ul>
+   </li>
+   <li><a href="multitarea.html" class="daddy">Multitarea</a>
+   <ul class="other-section">
+      <li><a href="reto_leds_y_buzzer_a_la_vez.html" class="no-ch">Reto leds y buzzer a la vez</a></li>
+   </ul>
+   </li>
+   <li><a href="servidor_web.html" class="daddy">Servidor web</a>
+   <ul class="other-section">
+      <li><a href="reto_punto_de_acceso_y_servidor_web.html" class="no-ch">Reto punto de acceso y servidor web</a></li>
+   </ul>
+   </li>
+   <li><a href="iot_thingspeak.html" class="daddy">IoT Thingspeak</a>
+   <ul class="other-section">
+      <li><a href="reto_humedad__temperatura_a_thingspeak.html" class="no-ch">Reto humedad / temperatura a thingspeak</a></li>
+   </ul>
+   </li>
+   <li><a href="wifimesh.html" class="daddy">WIFI-Mesh</a>
+   <ul class="other-section">
+      <li><a href="reto_pulsadores_led_rgb.html" class="no-ch">Reto pulsadores led RGB</a></li>
+      <li><a href="reto_envo_de_temperatura.html" class="no-ch">Reto envío de temperatura</a></li>
+      <li><a href="reto_pulsadores_rgb__temperatura.html" class="no-ch">Reto pulsadores RGB + Temperatura</a></li>
+   </ul>
+   </li>
+   <li><a href="espnow.html" class="daddy">ESP-NOW</a>
+   <ul class="other-section">
+      <li><a href="reto_tiempo.html" class="no-ch">Reto tiempo</a></li>
+      <li><a href="reto_datalogger_remoto.html" class="no-ch">Reto Datalogger Remoto</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="telegram.html" class="current-page-parent daddy">Telegram</a>
+   <ul>
+      <li><a href="reto_humedad__temperatura.html" class="no-ch">Reto humedad / temperatura</a></li>
+      <li><a href="reto_telecomandado.html" class="no-ch">Reto telecomandado</a></li>
+      <li id="active"><a href="reto_datos__telecomandado.html" class="active no-ch">Reto datos + telecomandado</a></li>
+   </ul>
+   </li>
+   <li><a href="para_saber_ms.html" class="no-ch">Para saber más</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="reto_telecomandado.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="para_saber_ms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Reto datos + telecomandado</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Reto datos + telecomandado</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta108_141_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">30</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>Se trata de mezclar los dos retos anteriores de telegram, haciendo que el bot envíe mensajes al grupo de datos ambientales a través de ciertos comandos y que desde el grupo se pueda telecomandar la placa controlando el color del RGB con otros comandos. En concreto el bot debe atender a las siguientes órdenes:</p>
+<ul>
+<li>/help o /ayuda: devuelve al grupo de telegram las instrucciones del mismo.</li>
+<li>/temp: devuelve al grupo de telegram la temperatura del sensor DHT11 de la TDR-Steam.</li>
+<li>/hum: devuelve al grupo de telegram la humedad del sensor DHT11 de la TDR-Steam.</li>
+<li>/rojo: hace que el led RGB de TDR-Steam luzca de color rojo.</li>
+<li>/verde: hace que el led RGB de TDR-Steam luzca de color verde.</li>
+<li>/azul: hace que el led RGB de TDR-Steam luzca de color azul.</li>
+<li>/aleatorio: hace que el led RGB de TDR-Steam luzca de un color aleatorio.</li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ayuda" /></div><div class="feedback js-feedback js-hidden"><p>URL compartida del proyecto: <a href="http://www.arduinoblocks.com/web/project/1910740">http://www.arduinoblocks.com/web/project/1910740</a></p>
+<p><img src="reto08_ampliado_demo_steamakers.png" alt="reto 8 ampliado" width="3103" height="4158" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="reto_telecomandado.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="para_saber_ms.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

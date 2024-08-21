@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>ESP-NOW | ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT)  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-53"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT) </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control programado con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
+   <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li><a href="datalogger_serial_plotter.html" class="daddy">Datalogger. Serial Plotter</a>
+   <ul class="other-section">
+      <li><a href="datalogger_humedad__temperatura.html" class="no-ch">Datalogger humedad / temperatura</a></li>
+      <li><a href="datalogger_intensidad__voltaje__energa.html" class="no-ch">Datalogger intensidad / voltaje / energía</a></li>
+   </ul>
+   </li>
+   <li><a href="multitarea.html" class="daddy">Multitarea</a>
+   <ul class="other-section">
+      <li><a href="reto_leds_y_buzzer_a_la_vez.html" class="no-ch">Reto leds y buzzer a la vez</a></li>
+   </ul>
+   </li>
+   <li><a href="servidor_web.html" class="daddy">Servidor web</a>
+   <ul class="other-section">
+      <li><a href="reto_punto_de_acceso_y_servidor_web.html" class="no-ch">Reto punto de acceso y servidor web</a></li>
+   </ul>
+   </li>
+   <li><a href="iot_thingspeak.html" class="daddy">IoT Thingspeak</a>
+   <ul class="other-section">
+      <li><a href="reto_humedad__temperatura_a_thingspeak.html" class="no-ch">Reto humedad / temperatura a thingspeak</a></li>
+   </ul>
+   </li>
+   <li><a href="wifimesh.html" class="daddy">WIFI-Mesh</a>
+   <ul class="other-section">
+      <li><a href="reto_pulsadores_led_rgb.html" class="no-ch">Reto pulsadores led RGB</a></li>
+      <li><a href="reto_envo_de_temperatura.html" class="no-ch">Reto envío de temperatura</a></li>
+      <li><a href="reto_pulsadores_rgb__temperatura.html" class="no-ch">Reto pulsadores RGB + Temperatura</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="espnow.html" class="active daddy">ESP-NOW</a>
+   <ul>
+      <li><a href="reto_tiempo.html" class="no-ch">Reto tiempo</a></li>
+      <li><a href="reto_datalogger_remoto.html" class="no-ch">Reto Datalogger Remoto</a></li>
+   </ul>
+   </li>
+   <li><a href="telegram.html" class="daddy">Telegram</a>
+   <ul class="other-section">
+      <li><a href="reto_humedad__temperatura.html" class="no-ch">Reto humedad / temperatura</a></li>
+      <li><a href="reto_telecomandado.html" class="no-ch">Reto telecomandado</a></li>
+      <li><a href="reto_datos__telecomandado.html" class="no-ch">Reto datos + telecomandado</a></li>
+   </ul>
+   </li>
+   <li><a href="para_saber_ms.html" class="no-ch">Para saber más</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="reto_pulsadores_rgb__temperatura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_tiempo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">ESP-NOW</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id99">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">ESP-NOW</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta99_128_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="espnow_logo" alt="logo espnow" title="logo espnow" width="474" height="118" style="float: right; margin: 2px;" /></p>
+<p>ESP-NOW es un protocolo de comunicaciones inalámbricas desarrollado por Espressif, el fabricante de los chips ESP8266 y ESP32.</p>
+<p>Características:</p>
+<ul>
+<li>Velocidad y Baja Energía:
+<ul>
+<li>ESP-NOW permite transmisiones de datos extremadamente rápidas, en milisegundos.</li>
+<li>Reduce el consumo de energía en comparación con Wi-Fi, lo que es ideal para dispositivos alimentados por batería.</li>
+<li>En lugar de los segundos que tomaría con Wi-Fi, ESP-NOW puede enviar datos en tan solo 40 milisegundos.</li>
+</ul>
+</li>
+<li>Alcance Extendido:
+<ul>
+<li>Mientras que Wi-Fi tiene un alcance de 25 a 100 metros, ESP-NOW puede alcanzar fácilmente entre 100 y 500 metros, o incluso más, según las condiciones.<br />Perfecto para proyectos IoT que requieren comunicación a larga distancia.</li>
+</ul>
+</li>
+<li>Funcionalidades:
+<ul>
+<li>Soporta comunicación unidireccional (unicast) y multidireccional (broadcast).</li>
+<li>Puede utilizarse como módulo auxiliar para configuración de red, depuración y actualizaciones de firmware.</li>
+</ul>
+</li>
+</ul>
+<p>En resumen, ESP-NOW es rápido, eficiente y perfecto para aplicaciones de baja energía y alcance extendido.<br /> <br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id109">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Como operar con ESP-NOW en arduinoblocks</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta109_250_2" class="block iDevice_content">
+<div class="exe-text"><p>Las órdenes relacionas con ESPNOW en arduinoblocks están en el submenú de comunicaciones:</p>
+<p><img src="espnow_menu_arduinoblocks.png" alt="menu espnow" title="menu espnow" width="777" height="650" /></p>
+<table style="width: 100%; height: 174px;" border="1">
+<tbody>
+<tr style="height: 25px;">
+<td style="width: 36.671%; text-align: center; height: 25px;">Orden</td>
+<td style="width: 63.329%; text-align: center; height: 25px;">Funcionalidad</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 36.671%; height: 79px;"><img src="espnow_orden_01.png" alt="espnow orden 1" title="espnow orden 1" width="580" height="84" style="vertical-align: middle;" /></td>
+<td style="width: 63.329%; height: 79px;">Establece la comunicación ESPNOW, puede llevar encriptación con clave primaria y local.</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 36.671%; height: 10px;"><img src="espnow_orden_02.png" alt="espnow orden 2" title="espnow orden 2" width="346" height="65" /></td>
+<td style="width: 63.329%; height: 10px;">Establece el canal wifi con el que trabajar con el router, sólo es necesario establecerlo en el caso que se use ESPNOW con funcionalidades wifi ya que sólo pueden trabajar en un canal wifi ambas comunicaciones.</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 36.671%; height: 10px;"><img src="espnow_orden_03.png" alt="espnow orden 3" title="espnow orden 3" width="708" height="60" /></td>
+<td style="width: 63.329%; height: 10px;">El emisor se empareja con un nodo remoto a través de su clave MAC.</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 36.671%; height: 10px;"><img src="espnow_orden_04.png" alt="espnow orden 4" title="espnow orden 4" width="736" height="63" /></td>
+<td style="width: 63.329%; height: 10px;">El emisor envía a un determinado dispositivo datos, una trama de texto de hasta 250 caracteres.</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 36.671%; height: 10px;"><img src="espnow_orden_05.png" alt="espnow orden 5" title="espnow orden 5" width="441" height="62" /></td>
+<td style="width: 63.329%; height: 10px;">El emisor envía a todos los dispositivos con los que está emparejado, una trama de texto de hasta 250 caracteres.</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 36.671%; height: 10px;"><img src="espnow_orden_06.png" alt="espnow orden 6" title="espnow orden 6" width="357" height="56" /></td>
+<td style="width: 63.329%; height: 10px;">El receptor nos puede devolver un acuse de recibo o no al emisor. Sirve para comprobar si ha recibido o no el receptor el mensaje.</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 36.671%; height: 10px;"><img src="espnow_orden_07.png" alt="espnow orden 7" title="espnow orden 7" width="282" height="92" /></td>
+<td style="width: 63.329%; height: 10px;">Evento en recepción que se ejecuta cuando recibe datos desde el emisor.</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 36.671%; height: 10px;"><img src="espnow_orden_08.png" alt="espnow orden 8" title="espnow orden 8" width="368" height="55" /></td>
+<td style="width: 63.329%; height: 10px;">Nos devuelve los datos recibidos desde el nodo emisor o bien la MAC del nodo emisor, todo ello dentro del evento al recibir datos.</td>
+</tr>
+</tbody>
+</table>
+<p>Para saber más: <a href="https://drive.google.com/file/d/1xeSOalJhOgPZF2syGutzAwufxOdv2H1H/view" target="_blank" rel="noopener">Comunicación ESP-NOW con ESP32 STEAMakers (Juanjo López)</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id110">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Clave MAC</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta110_250_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>¿Que es la clave MAC?</strong></p>
+<p>La dirección MAC (o “Media Access Control”) es un identificador único que los fabricantes asignan a la tarjeta de red de cada dispositivo. Está formada por 48 bits representados en dígitos hexadecimales. Cada dirección MAC es única a nivel mundial y, en teoría, es fija para cada dispositivo. En resumen, es como el “carné de identidad” de tu dispositivo en una red.<br /> </p>
+<p>Para poder comunicar el emisor con el receptor, es necesario emparejar en el emisor el receptor a través de su clave MAC.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id100">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Reto (Clave MAC)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta100_129_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">10</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>El reto consiste en conseguir la clave MAC de una ESP32 STEAMakers en concreto la de recepción, para ello vamos a realizar un programa que nos la muestre por consola serie cada cinco segundos. <span style="text-decoration: underline;">Recomendamos extraer las claves MAC de todas las placas de que dispongas y ponerle una pegatina con la misma.</span></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ayuda" /></div><div class="feedback js-feedback js-hidden"><p>URL de proyecto público: <a href="http://www.arduinoblocks.com/web/project/942983" target="_blank" rel="noopener">http://www.arduinoblocks.com/web/project/1908620</a></p>
+<p><span style="font-size: 12pt;"><span style="color: #333333; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;">Código:</span></span></span></p>
+<p><span style="font-size: 12pt;"><span style="color: #333333; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;"><img src="reto01_espnow.png" alt="reto01 espnow" title="reto01 espnow" width="650" height="408" /></span></span></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="reto_pulsadores_rgb__temperatura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_tiempo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

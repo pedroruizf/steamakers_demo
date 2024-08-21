@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>WIFI-Mesh | ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT)  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-57"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT) </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control programado con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
+   <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li><a href="datalogger_serial_plotter.html" class="daddy">Datalogger. Serial Plotter</a>
+   <ul class="other-section">
+      <li><a href="datalogger_humedad__temperatura.html" class="no-ch">Datalogger humedad / temperatura</a></li>
+      <li><a href="datalogger_intensidad__voltaje__energa.html" class="no-ch">Datalogger intensidad / voltaje / energía</a></li>
+   </ul>
+   </li>
+   <li><a href="multitarea.html" class="daddy">Multitarea</a>
+   <ul class="other-section">
+      <li><a href="reto_leds_y_buzzer_a_la_vez.html" class="no-ch">Reto leds y buzzer a la vez</a></li>
+   </ul>
+   </li>
+   <li><a href="servidor_web.html" class="daddy">Servidor web</a>
+   <ul class="other-section">
+      <li><a href="reto_punto_de_acceso_y_servidor_web.html" class="no-ch">Reto punto de acceso y servidor web</a></li>
+   </ul>
+   </li>
+   <li><a href="iot_thingspeak.html" class="daddy">IoT Thingspeak</a>
+   <ul class="other-section">
+      <li><a href="reto_humedad__temperatura_a_thingspeak.html" class="no-ch">Reto humedad / temperatura a thingspeak</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="wifimesh.html" class="active daddy">WIFI-Mesh</a>
+   <ul>
+      <li><a href="reto_pulsadores_led_rgb.html" class="no-ch">Reto pulsadores led RGB</a></li>
+      <li><a href="reto_envo_de_temperatura.html" class="no-ch">Reto envío de temperatura</a></li>
+      <li><a href="reto_pulsadores_rgb__temperatura.html" class="no-ch">Reto pulsadores RGB + Temperatura</a></li>
+   </ul>
+   </li>
+   <li><a href="espnow.html" class="daddy">ESP-NOW</a>
+   <ul class="other-section">
+      <li><a href="reto_tiempo.html" class="no-ch">Reto tiempo</a></li>
+      <li><a href="reto_datalogger_remoto.html" class="no-ch">Reto Datalogger Remoto</a></li>
+   </ul>
+   </li>
+   <li><a href="telegram.html" class="daddy">Telegram</a>
+   <ul class="other-section">
+      <li><a href="reto_humedad__temperatura.html" class="no-ch">Reto humedad / temperatura</a></li>
+      <li><a href="reto_telecomandado.html" class="no-ch">Reto telecomandado</a></li>
+      <li><a href="reto_datos__telecomandado.html" class="no-ch">Reto datos + telecomandado</a></li>
+   </ul>
+   </li>
+   <li><a href="para_saber_ms.html" class="no-ch">Para saber más</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="reto_humedad__temperatura_a_thingspeak.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_pulsadores_led_rgb.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">WIFI-Mesh</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id247">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿WIFI-Mesh?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta247_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Wifi-Mesh es una malla de dispositivos descentralizados, conectados mediante wifi de tal manera que, todos los dispositivos pueden ser tanto emisores como receptores de mensajes.</p>
+<p>Para saber más: <a href="https://drive.google.com/file/d/1bRxolnQ7ny5jdpUCbmtyT9GTHrseVjFG/view" target="_blank" rel="noopener">ESP32 Steamakers IoT-Wifi-WifiMesh</a></p>
+<p></p>
+<p><img src="wifi.png" alt="wifi" title="wifi" width="150" height="111" style="float: right; margin-right: 30px; margin-left: 30px;" /><img src="esp12.png" alt="esp" title="esp" width="78" height="150" style="float: right;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id127">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">WIFI-Mesh en Arduinoblocks</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta127_280_2" class="block iDevice_content">
+<div class="exe-text"><p>Las funcionalidades WIFI-Mesh se encuentra en la localización Comunicaciones &gt; WIFI-Mesh dentro de los menús de herramientas de arduinoblocks:</p>
+<p><img src="wifimesh_menu_arduinoblocks.png" alt="wifimesh menu arduinoblocks" title="wifimesh menu arduinoblocks" width="692" height="661" /></p>
+<p>Las principales funcionalidades son las siguientes:</p>
+<table border="1" style="width: 100%; height: 222px;">
+<tbody>
+<tr style="height: 25px;">
+<td style="width: 28.4932%; text-align: center; height: 25px;">Orden</td>
+<td style="width: 71.5068%; text-align: center; height: 25px;">Funcionalidad</td>
+</tr>
+<tr style="height: 136px;">
+<td style="width: 28.4932%; height: 136px;"><img src="wifimesh_orden_01.png" alt="wifimesh orden 01" title="wifimesh orden 01" width="265" height="130" /></td>
+<td style="width: 71.5068%; height: 136px;">Crea o unes al dispositivo a una red, para que la comunicación sea efectiva deben ser iguales en todas las placas todos los parámetros: Nombre, clave y puerto.</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 28.4932%; height: 10px;"><img src="wifimesh_orden_02.png" alt="wifimesh orden 02" title="wifimesh orden 02" width="354" height="57" /></td>
+<td style="width: 71.5068%; height: 10px;">Envía a todas las placas de la red un mensaje.</td>
+</tr>
+<tr style="height: 11px;">
+<td style="width: 28.4932%; height: 11px;"><img src="wifimesh_orden_03.png" alt="wifimesh orden 03" title="wifimesh orden 03" width="492" height="52" /></td>
+<td style="width: 71.5068%; height: 11px;">Envía a todas las placas de la red un mensaje con un dato opcional.</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 28.4932%; height: 10px;"><img src="wifimesh_orden_04.png" alt="wifimesh orden 04" title="wifimesh orden 04" width="242" height="90" /></td>
+<td style="width: 71.5068%; height: 10px;">Evento (usado en recepción) que entra en ejecución cuando recibe un mensaje concreto.</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 28.4932%; height: 10px;"><img src="wifimesh_orden_05.png" alt="wifimesh orden 05" title="wifimesh orden 05" width="214" height="84" /></td>
+<td style="width: 71.5068%; height: 10px;">Evento (usado en recepción) que entra en ejecución cuando recibe cualquier mensaje.</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 28.4932%; height: 10px;"><img src="wifimesh_orden_06.png" alt="wifimesh orden 06" title="wifimesh orden 06" width="222" height="46" /></td>
+<td style="width: 71.5068%; height: 10px;">Orden que se usa en el evento de mensaje recibido, para obtener el mensaje recibido.</td>
+</tr>
+<tr style="height: 0px;">
+<td style="width: 28.4932%; height: 10px;"><img src="wifimesh_orden_07.png" alt="wifimesh orden 07" title="wifimesh orden 07" width="213" height="50" /></td>
+<td style="width: 71.5068%; height: 10px;">Orden que se usa en el evento de mensaje recibido, para obtener los datos recibidos en un mensaje.</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="reto_humedad__temperatura_a_thingspeak.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_pulsadores_led_rgb.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

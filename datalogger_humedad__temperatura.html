@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Datalogger humedad / temperatura | ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT)  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Pedro Ruiz Fernández" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-60"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT) </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Control programado con ESP32 Steamaker + TDR-Steam + Arduinoblocks</a></li>
+   <li><a href="elementos_y_tipos.html" class="no-ch">Elementos y tipos</a></li>
+   <li><a href="elemento_de_control.html" class="no-ch">Elemento de control</a></li>
+   <li><a href="arduinoblocks.html" class="no-ch">Arduinoblocks</a></li>
+   <li class="current-page-parent"><a href="datalogger_serial_plotter.html" class="current-page-parent daddy">Datalogger. Serial Plotter</a>
+   <ul>
+      <li id="active"><a href="datalogger_humedad__temperatura.html" class="active no-ch">Datalogger humedad / temperatura</a></li>
+      <li><a href="datalogger_intensidad__voltaje__energa.html" class="no-ch">Datalogger intensidad / voltaje / energía</a></li>
+   </ul>
+   </li>
+   <li><a href="multitarea.html" class="daddy">Multitarea</a>
+   <ul class="other-section">
+      <li><a href="reto_leds_y_buzzer_a_la_vez.html" class="no-ch">Reto leds y buzzer a la vez</a></li>
+   </ul>
+   </li>
+   <li><a href="servidor_web.html" class="daddy">Servidor web</a>
+   <ul class="other-section">
+      <li><a href="reto_punto_de_acceso_y_servidor_web.html" class="no-ch">Reto punto de acceso y servidor web</a></li>
+   </ul>
+   </li>
+   <li><a href="iot_thingspeak.html" class="daddy">IoT Thingspeak</a>
+   <ul class="other-section">
+      <li><a href="reto_humedad__temperatura_a_thingspeak.html" class="no-ch">Reto humedad / temperatura a thingspeak</a></li>
+   </ul>
+   </li>
+   <li><a href="wifimesh.html" class="daddy">WIFI-Mesh</a>
+   <ul class="other-section">
+      <li><a href="reto_pulsadores_led_rgb.html" class="no-ch">Reto pulsadores led RGB</a></li>
+      <li><a href="reto_envo_de_temperatura.html" class="no-ch">Reto envío de temperatura</a></li>
+      <li><a href="reto_pulsadores_rgb__temperatura.html" class="no-ch">Reto pulsadores RGB + Temperatura</a></li>
+   </ul>
+   </li>
+   <li><a href="espnow.html" class="daddy">ESP-NOW</a>
+   <ul class="other-section">
+      <li><a href="reto_tiempo.html" class="no-ch">Reto tiempo</a></li>
+      <li><a href="reto_datalogger_remoto.html" class="no-ch">Reto Datalogger Remoto</a></li>
+   </ul>
+   </li>
+   <li><a href="telegram.html" class="daddy">Telegram</a>
+   <ul class="other-section">
+      <li><a href="reto_humedad__temperatura.html" class="no-ch">Reto humedad / temperatura</a></li>
+      <li><a href="reto_telecomandado.html" class="no-ch">Reto telecomandado</a></li>
+      <li><a href="reto_datos__telecomandado.html" class="no-ch">Reto datos + telecomandado</a></li>
+   </ul>
+   </li>
+   <li><a href="para_saber_ms.html" class="no-ch">Para saber más</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="datalogger_serial_plotter.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="datalogger_intensidad__voltaje__energa.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Datalogger humedad / temperatura</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id270">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">DHT11</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta270_168_2" class="block iDevice_content">
+<div class="exe-text"><p>En este primer datalogger vamos a transmitir al ordenador la humedad y la temperatura, para ello usaremos el sensor DHT11 integrado en nuestro Shield TDR-STEAM.</p>
+<p>El DHT11 es un sensor que permite realizar la medición simultánea de temperatura y humedad.<img src="dht11.jpg" alt="dht11" width="289" height="289" style="float: right; margin-right: 4px; margin-left: 4px;" /></p>
+<p>Estos sensores disponen de un microprocesador que realiza la medición, dando su valor mediante una señal digital, no como el LM35, por tanto es menos sensible al ruido. Al ser una señal digital es muy sencillo adquirir esta información por Arduino. Para adquirir esta información lo haremos a través de instrucciones que forman parte de una librería. En el caso de Arduinoblocks estas librerías ya vienen integradas en el bloque que controla al sensor.</p>
+<p>Las precisión y capacidades de medición del DHT11 son pobres:</p>
+<ul>
+<li>Medición de temperatura entre 0 a 50, con una precisión de 2ºC</li>
+<li>Medición de humedad entre 20 a 80%, con precisión del 5%</li>
+<li>Frecuencia de muestreo de 1 muestras por segundo (1 Hz)</li>
+</ul>
+<p><img src="dht11_board.png" alt="dht11 board" width="728" height="700" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id271">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Reto datalogger humedad / temperatura</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta271_169_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">30</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>Se trata de adquirir del sensor DHT11 (conectado a entrada digital 4 de TDR-Steam) el valor de humedad y temperatura cada segundo y mostrarlo en la pantalla LCD 16x2. Además a través de comunicación serie (Serial plotter) se representarán las gráficas de los valores de humedad y temperatura.</p>
+<p>Objetivos:</p>
+<ul>
+<li>Repaso de pantalla LCD.</li>
+<li>Repaso de funciones.</li>
+<li>Conocer y usar Serial plotter.</li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ayuda" /></div><div class="feedback js-feedback js-hidden"><p>Vídeo:</p>
+<p><iframe width="853" height="480" src="https://www.youtube.com/embed/mz-F_qfj6YE" allowfullscreen="allowfullscreen"></iframe></p>
+<p>URL de proyecto público: <a href="http://www.arduinoblocks.com/web/project/938576" target="_blank" rel="noopener">http://www.arduinoblocks.com/web/project/938576</a></p>
+<p>Código:</p>
+<p><img src="reto01_demo_steamakers.png" alt="reto01" title="reto01" width="900" height="364" /></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="datalogger_serial_plotter.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="datalogger_intensidad__voltaje__energa.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
