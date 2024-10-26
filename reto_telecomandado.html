@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
-<body class="exe-web-site" id="exe-node-72"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-70"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">ESP32 STEAMakers + TDR-Steam + Arduinoblocks (comunicaciones e IoT) </div></header>
@@ -54,17 +54,18 @@
       <li><a href="reto_pulsadores_rgb__temperatura.html" class="no-ch">Reto pulsadores RGB + Temperatura</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="espnow.html" class="current-page-parent daddy">ESP-NOW</a>
-   <ul>
+   <li><a href="espnow.html" class="daddy">ESP-NOW</a>
+   <ul class="other-section">
       <li><a href="reto_tiempo.html" class="no-ch">Reto tiempo</a></li>
       <li><a href="reto_datalogger_remoto.html" class="no-ch">Reto Datalogger Remoto</a></li>
-      <li id="active"><a href="reto_telecomandado.html" class="active no-ch">Reto telecomandado</a></li>
+      <li><a href="reto_telecomandado_leds.html" class="no-ch">Reto telecomandado leds</a></li>
+      <li><a href="reto_telecomandado_rgb.html" class="no-ch">Reto telecomandado RGB</a></li>
    </ul>
    </li>
-   <li><a href="telegram.html" class="daddy">Telegram</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="telegram.html" class="current-page-parent daddy">Telegram</a>
+   <ul>
       <li><a href="reto_humedad__temperatura.html" class="no-ch">Reto humedad / temperatura</a></li>
-      <li><a href="reto_telecomandado0.html" class="no-ch">Reto telecomandado</a></li>
+      <li id="active"><a href="reto_telecomandado.html" class="active no-ch">Reto telecomandado</a></li>
       <li><a href="reto_datos__telecomandado.html" class="no-ch">Reto datos + telecomandado</a></li>
    </ul>
    </li>
@@ -74,26 +75,30 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="reto_datalogger_remoto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="telegram.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="reto_humedad__temperatura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_datos__telecomandado.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Reto telecomandado</h1></header>
-<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id137">
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id106">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header"><h1 class="iDeviceTitle">Reto telecomandado pulsadores / leds</h1></header>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Reto telecomandado</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta137_282_2" class="block iDevice_content">
-<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">30</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>En función de los pulsadores activados en la placa emisora se encenderán los leds de la placa receptora. De tal manera que:</p>
+<div id="ta106_141_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">30</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">1</dd></dl><div class="pbl-task-description"><p>El reto consiste en crear un bot de Telegram asociado a la placa y asignarlo a un grupo de telegram, controlando desde el grupo de telegram a través del bot el Led RGB de TDR-Steam. Las ordenes y acciones a las que tiene que atender el bot son las siguientes:</p>
 <ul>
-<li>Si pulsamos el pulsador 1 (SW1) en la placa emisora: lucirá el led azul y se apagará el rojo, tanto de emisora como receptora.</li>
-<li>Si pulsamos el pulsador 2 (SW2) en la placa emisora: lucirá el led rojo y se apagará el azula, tanto de emisora como receptora.<br /> </li>
-</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ayuda" /></div><div class="feedback js-feedback js-hidden"><p>URL proyecto público (emisor):<a href=" http://www.arduinoblocks.com/web/project/1909542" target="_blank" rel="noopener"> http://www.arduinoblocks.com/web/project/1909542</a></p>
-<p><img src="reto04_espnow_e.png" alt="reto 04 espnow e" title="reto 04 espnow e" width="694" height="654" /></p>
-<p>URL proyecto público (receptor): <a href="http://www.arduinoblocks.com/web/project/1911991">http://www.arduinoblocks.com/web/project/1911991</a></p>
-<p><img src="reto04_espnow_r.png" alt="reto 04 espnow r" title="reto 04 espnow r" width="486" height="617" /></p></div>
+<li>/help o /ayuda: devuelve al grupo de telegram las instrucciones del mismo.</li>
+<li>/color=rojo: hace que el led RGB de TDR-Steam luzca de color rojo.</li>
+<li>/color=verde: hace que el led RGB de TDR-Steam luzca de color verde.</li>
+<li>/color=azul: hace que el led RGB de TDR-Steam luzca de color azul.</li>
+<li>/color=aleatorio: hace que el led RGB de TDR-Steam luzca de un color aleatorio.</li>
+</ul></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ayuda" /></div><div class="feedback js-feedback js-hidden"><p style="font-family: 'Atkinson Hyperlegible', ​Arial, Helvetica, sans-serif;">Vídeo:</p>
+<p style="font-family: 'Atkinson Hyperlegible', ​Arial, Helvetica, sans-serif;"><iframe width="695" height="391" src="https://www.youtube.com/embed/4erV1q_kp6c" allowfullscreen="allowfullscreen"></iframe></p>
+<p style="font-family: 'Atkinson Hyperlegible', ​Arial, Helvetica, sans-serif;">URL del proyecto público: <a href="http://www.arduinoblocks.com/web/project/1910733">http://www.arduinoblocks.com/web/project/1910733</a></p>
+<p style="font-family: 'Atkinson Hyperlegible', ​Arial, Helvetica, sans-serif;"><span style="font-size: 12pt;"><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;">Código :</span></span></span></p>
+<p style="font-family: 'Atkinson Hyperlegible', ​Arial, Helvetica, sans-serif;"><span style="font-size: 12pt;"><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="background-color: #f9f9f9;"><img src="reto08_demo_steamakers.png" alt="reto 8" width="3953" height="3302" title="reto 8" /><br /></span></span></span></p></div>
 </div>
 </div>
 </div>
@@ -106,7 +111,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="reto_datalogger_remoto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="telegram.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="reto_humedad__temperatura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="reto_datos__telecomandado.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <footer id="siteFooter">Por: Pedro Ruiz Fernández</footer></div>
